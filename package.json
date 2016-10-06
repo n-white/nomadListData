@@ -4,7 +4,8 @@
   "description": "",
   "main": "neo4jLoader.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node neo4jLoader.js"
   },
   "repository": {
     "type": "git",
