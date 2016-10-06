@@ -33,6 +33,7 @@ const saveCity = (cityObj) => (
 const recursiveAdd = (cityArray) => {
 	saveCity(cityArray[0])
 	.then(function() {
+		// Stop recursion when array is empty
 	  if (cityArray.length === 0) {
 	    return;
 	  } else {
