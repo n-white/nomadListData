@@ -3,8 +3,10 @@ const db = new neo4j.GraphDatabase(`http://neo4j:cake@127.0.0.1:7474`);
 const bluebird = require('bluebird');
 const nomadData = require('./nomadData.json')
 
+// This function saves only one city
 const saveCity = (cityObj) => (
   new Promise((resolve, reject) => {
+    // Using the neo4j raw cypher querying language to save one city node
     db.cypher({
       query: `MERGE (c:City {name: {name}}) \
       ON CREATE SET c.name = {name} \
@@ -36,6 +38,7 @@ const recursiveAdd = (cityArray) => {
 		// Stop recursion when array is empty
 	  if (cityArray.length === 0) {
 	    return;
+	  // Recurse with the next city in the array (reducing the array on each recursive call)
 	  } else {
 	    recursiveAdd(cityArray.slice(1));
 	  }
