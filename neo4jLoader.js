@@ -3,6 +3,7 @@ const db = new neo4j.GraphDatabase(`http://neo4j:cake@127.0.0.1:7474`);
 const bluebird = require('bluebird');
 const nomadData = require('./nomadData.json')
 
+// Guide for how to weight each of the sections (e.g., safety, fun, etc)
 const sectionWeighting = {
   'safety': 0.3,
   'fun': 0.3,
@@ -10,6 +11,7 @@ const sectionWeighting = {
   'ease': 0.2
 }
 
+// Calculate the weighting for each individual item (each section is equally weighted)
 const weighting = {
   
   //safety
@@ -38,13 +40,11 @@ const weighting = {
 
 }
 
-var tempAggregate = {};
-
 // This function saves only one city
 const saveCity = (cityObj) => (
   new Promise((resolve, reject) => {
-    // Using the neo4j raw cypher querying language to save one city node
 
+    // Using the neo4j raw cypher querying language to save one city node
     let cityData = {
       'name': cityObj.info.city.name,
 
@@ -69,14 +69,13 @@ const saveCity = (cityObj) => (
       'nomad_score': cityObj.scores.nomad_score
     }
 
+    // Calculate the overall weighted score for the city node
     let weightedScore = 0;
-
     for (key in weighting) {
       weightedScore += weighting[key] * cityData[key];
     }
 
-    tempAggregate[cityData.name] = weightedScore;
-
+    // Cypher query to add one city node
     db.cypher({
       query: `MERGE (c:City {name: "${cityData.name}"}) \
       ON CREATE SET c.name = "${cityData.name}" \ 
