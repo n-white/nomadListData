@@ -37,7 +37,7 @@ var newString = '';
 
 
 for (key in weighting) {
-	newString += 'ON MATCH SET c.' + key + ' = "${' + key+ '}" \\ \n'
+	newString += 'ON MATCH SET c.' + key + ' = "${cityData.' + key+ '}" \\ \n'
 }
 
 console.log(newString)
