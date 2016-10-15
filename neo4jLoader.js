@@ -3,31 +3,22 @@ const db = new neo4j.GraphDatabase(`http://neo4j:cake@127.0.0.1:7474`);
 const bluebird = require('bluebird');
 const nomadData = require('./nomadData.json')
 
-        // ON MATCH SET c.${racism} = ${racism} \ 
-        // ON MATCH SET c.${lgbt_friendly} = ${lgbt_friendly} \ 
-        // ON MATCH SET c.${friendly_to_foreigners} = ${friendly_to_foreigners} \ 
-        // ON MATCH SET c.${female_friendly} = ${female_friendly} \ 
-        // ON MATCH SET c.${peace_score} = ${peace_score} \ 
-        // ON MATCH SET c.${press_freedom_index} = ${press_freedom_index} \ 
-        // ON MATCH SET c.${safety} = ${safety} \ 
-        // ON MATCH SET c.${nightlife} = ${nightlife} \ 
-        // ON MATCH SET c.${weather} = ${weather} \ 
-        // ON MATCH SET c.${aircon} = ${aircon} \ 
-        // ON MATCH SET c.${life_score} = ${life_score} \ 
-        // ON MATCH SET c.${download} = ${download} \ 
-        // ON MATCH SET c.${places_to_work} = ${places_to_work} \ 
-        // ON MATCH SET c.${free_wifi_available} = ${free_wifi_available} \ 
-        // ON MATCH SET c.${leisure} = ${leisure} \ 
-        // ON MATCH SET c.${nomad_score} = ${nomad_score} \ 
-
-
+// Guide for how to weight each of the sections (e.g., safety, fun, etc)
 const sectionWeighting = {
-  'safety': 0.3,
+  'safety': 0.5,
   'fun': 0.3,
-  'quality': 0.2,
-  'ease': 0.2
+  'quality': 0.2
+  // 'ease': 0.2
 }
 
+const override = {
+  'cusco': {
+
+  }
+}
+
+
+// Calculate the weighting for each individual item (each section is equally weighted)
 const weighting = {
   
   //safety
@@ -36,81 +27,104 @@ const weighting = {
   'friendly_to_foreigners': sectionWeighting.safety / 7,
   'female_friendly': sectionWeighting.safety / 7,
   'peace_score': sectionWeighting.safety / 7,
-  'press_freedom_index': sectionWeighting.safety / 7,
+  'press_freedom_index': -(sectionWeighting.safety / 100 / 7),
   'safety': sectionWeighting.safety / 7,
 
   // fun
-  'nightlife': sectionWeighting.fun / 2,
-  'weather': sectionWeighting.fun / 2,
+  'nightlife': sectionWeighting.fun / 3,
+  'weather': -(sectionWeighting.fun / 3),
+  'leisure': sectionWeighting.fun / 3,
 
   //quality
   'aircon': sectionWeighting.quality / 2,
   'life_score': sectionWeighting.quality / 2,
 
-  //ease
+  // //ease
   'download': sectionWeighting.ease / 5,
   'places_to_work': sectionWeighting.ease / 5,
   'free_wifi_available': sectionWeighting.ease / 5,
-  'leisure': sectionWeighting.ease / 5,
   'nomad_score': sectionWeighting.ease / 5
 
 }
 
-
 // This function saves only one city
 const saveCity = (cityObj) => (
   new Promise((resolve, reject) => {
+
     // Using the neo4j raw cypher querying language to save one city node
+    let cityData = {
+      'name': cityObj.info.city.name,
+      'country': cityObj.info.country.name,
 
-    let name = cityObj.info.city.name;
+      'racism': cityObj.scores.racism,
+      'lgbt_friendly': cityObj.scores.lgbt_friendly,
+      'friendly_to_foreigners': cityObj.scores.friendly_to_foreigners,
+      'female_friendly': cityObj.scores.female_friendly,
+      'peace_score': cityObj.scores.peace_score,
+      'press_freedom_index': cityObj.scores.press_freedom_index,
+      'safety': cityObj.scores.safety,
 
-    let racism = cityObj.scores.racism;
-    let lgbt_friendly = cityObj.scores.lgbt_friendly;
-    let friendly_to_foreigners = cityObj.scores.friendly_to_foreigners;
-    let female_friendly = cityObj.scores.female_friendly;
-    let peace_score = cityObj.scores.peace_score;
-    let press_freedom_index = cityObj.scores.press_freedom_index;
-    let safety = cityObj.scores.safety;
+      'nightlife': cityObj.scores.nightlife,
+      'weather': cityObj.info.weather.humidity.value,
+      'leisure': cityObj.scores.leisure,
 
-    let nightlife = cityObj.scores.nightlife;
-    let weather = cityObj.info.weather.type;
+      'aircon': cityObj.scores.aircon,
+      'life_score': cityObj.scores.life_score,
 
-    let aircon = cityObj.scores.aircon;
-    let life_score = cityObj.scores.life_score;
+      'download': cityObj.info.internet.speed.download,
+      'places_to_work': cityObj.scores.places_to_work,
+      'free_wifi_available': cityObj.scores.free_wifi_available,
+      'nomad_score': cityObj.scores.nomad_score
+    }
 
-    let download = cityObj.info.internet.speed.download;
-    let places_to_work = cityObj.scores.places_to_work;
-    let free_wifi_available = cityObj.scores.free_wifi_available;
-    let leisure = cityObj.scores.leisure;
-    let nomad_score = cityObj.scores.nomad_score;
+    // Calculate the overall weighted score for the city node
+    let weightedScore = 0;
+    for (key in weighting) {
+      // if (cityData[key] !== undefined)
+      weightedScore += weighting[key] * cityData[key];
+      // console.log(weightedScore)
+    }
 
 
+    var months = ''
+
+    for (var i = 0; i < cityObj.info.monthsToVisit.length; i++) {
+      console.log(cityObj.info.monthsToVisit[i])
+      months += cityObj.info.monthsToVisit[i] + ',';
+    }
+
+    // Cypher query to add one city node
     db.cypher({
-      query: `MERGE (c:City {name: "${name}"}) \
-      ON CREATE SET c.name = "${name}" \ 
-        ON MATCH SET c.racism = "${racism}" \ 
-        ON MATCH SET c.lgbt_friendly = "${lgbt_friendly}" \ 
-        ON MATCH SET c.friendly_to_foreigners = "${friendly_to_foreigners}" \ 
-        ON MATCH SET c.female_friendly = "${female_friendly}" \ 
-        ON MATCH SET c.peace_score = "${peace_score}" \ 
-        ON MATCH SET c.press_freedom_index = "${press_freedom_index}" \ 
-        ON MATCH SET c.safety = "${safety}" \ 
-        ON MATCH SET c.nightlife = "${nightlife}" \ 
-        ON MATCH SET c.weather = "${weather}" \ 
-        ON MATCH SET c.aircon = "${aircon}" \ 
-        ON MATCH SET c.life_score = "${life_score}" \ 
-        ON MATCH SET c.download = "${download}" \ 
-        ON MATCH SET c.places_to_work = "${places_to_work}" \ 
-        ON MATCH SET c.free_wifi_available = "${free_wifi_available}" \ 
-        ON MATCH SET c.leisure = "${leisure}" \ 
-        ON MATCH SET c.nomad_score = "${nomad_score}" \
+      query: `MERGE (c:City {name: "${cityData.name}"}) \
+      ON CREATE SET c.name = "${cityData.name}" \ 
+        ON MATCH SET c.country = "${cityData.country}" \ 
+        ON MATCH SET c.racism = "${cityData.racism}" \ 
+        ON MATCH SET c.lgbt_friendly = "${cityData.lgbt_friendly}" \ 
+        ON MATCH SET c.friendly_to_foreigners = "${cityData.friendly_to_foreigners}" \ 
+        ON MATCH SET c.female_friendly = "${cityData.female_friendly}" \ 
+        ON MATCH SET c.peace_score = "${cityData.peace_score}" \ 
+        ON MATCH SET c.press_freedom_index = "${cityData.press_freedom_index}" \ 
+        ON MATCH SET c.safety = "${cityData.safety}" \ 
+        ON MATCH SET c.nightlife = "${cityData.nightlife}" \ 
+        ON MATCH SET c.humidity = "${cityObj.info.weather.humidity.value}" \ 
+        ON MATCH SET c.temperature = "${cityObj.info.weather.temperature.fahrenheit}" \ 
+        ON MATCH SET c.months_to_visit = "${months}" \ 
+        ON MATCH SET c.aircon = "${cityData.aircon}" \ 
+        ON MATCH SET c.life_score = "${cityData.life_score}" \ 
+        ON MATCH SET c.download = "${cityData.download}" \ 
+        ON MATCH SET c.places_to_work = "${cityData.places_to_work}" \ 
+        ON MATCH SET c.free_wifi_available = "${cityData.free_wifi_available}" \ 
+        ON MATCH SET c.leisure = "${cityData.leisure}" \ 
+        ON MATCH SET c.nomad_score = "${cityData.nomad_score}" \ 
+        ON MATCH SET c.weightedScore = "${weightedScore}" \ 
+        ON MATCH SET c.dailyCost = "${Math.round(cityObj.cost.shortTerm.USD / 30)}" \ 
       RETURN c;`,
     }, (err, newCity) => {
       if (err) {
         console.log(`error adding city: ${err}`);
         reject(err);
       } else {
-      	console.log(`city added ${cityObj.info.city.name}`)
+      	// console.log(`city added ${cityObj.info.city.name}`)
         resolve('next');
       }
     });
@@ -121,13 +135,13 @@ const recursiveAdd = (cityArray) => {
 	saveCity(cityArray[0])
 	.then(function() {
 		// Stop recursion when array is empty
-	  if (cityArray.length === 0) {
-	    return;
-	  // Recurse with the next city in the array (reducing the array on each recursive call)
-	  } else {
-	    recursiveAdd(cityArray.slice(1));
-	  }
-	})
+    if (cityArray.length === 0) {
+      return;
+    // Recurse with the next city in the array (reducing the array on each recursive call)
+    } else {
+      recursiveAdd(cityArray.slice(1));
+    }
+  })
 };
 
 recursiveAdd(nomadData.result);
