@@ -5,11 +5,18 @@ const nomadData = require('./nomadData.json')
 
 // Guide for how to weight each of the sections (e.g., safety, fun, etc)
 const sectionWeighting = {
-  'safety': 0.3,
+  'safety': 0.5,
   'fun': 0.3,
-  'quality': 0.2,
-  'ease': 0.2
+  'quality': 0.2
+  // 'ease': 0.2
 }
+
+const override = {
+  'cusco': {
+
+  }
+}
+
 
 // Calculate the weighting for each individual item (each section is equally weighted)
 const weighting = {
@@ -20,22 +27,22 @@ const weighting = {
   'friendly_to_foreigners': sectionWeighting.safety / 7,
   'female_friendly': sectionWeighting.safety / 7,
   'peace_score': sectionWeighting.safety / 7,
-  'press_freedom_index': sectionWeighting.safety / 7,
+  'press_freedom_index': -(sectionWeighting.safety / 100 / 7),
   'safety': sectionWeighting.safety / 7,
 
   // fun
-  'nightlife': sectionWeighting.fun / 2,
-  'weather': sectionWeighting.fun / 2,
+  'nightlife': sectionWeighting.fun / 3,
+  'weather': -(sectionWeighting.fun / 3),
+  'leisure': sectionWeighting.fun / 3,
 
   //quality
   'aircon': sectionWeighting.quality / 2,
   'life_score': sectionWeighting.quality / 2,
 
-  //ease
+  // //ease
   'download': sectionWeighting.ease / 5,
   'places_to_work': sectionWeighting.ease / 5,
   'free_wifi_available': sectionWeighting.ease / 5,
-  'leisure': sectionWeighting.ease / 5,
   'nomad_score': sectionWeighting.ease / 5
 
 }
@@ -47,6 +54,7 @@ const saveCity = (cityObj) => (
     // Using the neo4j raw cypher querying language to save one city node
     let cityData = {
       'name': cityObj.info.city.name,
+      'country': cityObj.info.country.name,
 
       'racism': cityObj.scores.racism,
       'lgbt_friendly': cityObj.scores.lgbt_friendly,
@@ -57,7 +65,8 @@ const saveCity = (cityObj) => (
       'safety': cityObj.scores.safety,
 
       'nightlife': cityObj.scores.nightlife,
-      'weather': 0,
+      'weather': cityObj.info.weather.humidity.value,
+      'leisure': cityObj.scores.leisure,
 
       'aircon': cityObj.scores.aircon,
       'life_score': cityObj.scores.life_score,
@@ -65,20 +74,30 @@ const saveCity = (cityObj) => (
       'download': cityObj.info.internet.speed.download,
       'places_to_work': cityObj.scores.places_to_work,
       'free_wifi_available': cityObj.scores.free_wifi_available,
-      'leisure': cityObj.scores.leisure,
       'nomad_score': cityObj.scores.nomad_score
     }
 
     // Calculate the overall weighted score for the city node
     let weightedScore = 0;
     for (key in weighting) {
+      // if (cityData[key] !== undefined)
       weightedScore += weighting[key] * cityData[key];
+      // console.log(weightedScore)
+    }
+
+
+    var months = ''
+
+    for (var i = 0; i < cityObj.info.monthsToVisit.length; i++) {
+      console.log(cityObj.info.monthsToVisit[i])
+      months += cityObj.info.monthsToVisit[i] + ',';
     }
 
     // Cypher query to add one city node
     db.cypher({
       query: `MERGE (c:City {name: "${cityData.name}"}) \
       ON CREATE SET c.name = "${cityData.name}" \ 
+        ON MATCH SET c.country = "${cityData.country}" \ 
         ON MATCH SET c.racism = "${cityData.racism}" \ 
         ON MATCH SET c.lgbt_friendly = "${cityData.lgbt_friendly}" \ 
         ON MATCH SET c.friendly_to_foreigners = "${cityData.friendly_to_foreigners}" \ 
@@ -87,7 +106,9 @@ const saveCity = (cityObj) => (
         ON MATCH SET c.press_freedom_index = "${cityData.press_freedom_index}" \ 
         ON MATCH SET c.safety = "${cityData.safety}" \ 
         ON MATCH SET c.nightlife = "${cityData.nightlife}" \ 
-        ON MATCH SET c.weather = "${cityData.weather}" \ 
+        ON MATCH SET c.humidity = "${cityObj.info.weather.humidity.value}" \ 
+        ON MATCH SET c.temperature = "${cityObj.info.weather.temperature.fahrenheit}" \ 
+        ON MATCH SET c.months_to_visit = "${months}" \ 
         ON MATCH SET c.aircon = "${cityData.aircon}" \ 
         ON MATCH SET c.life_score = "${cityData.life_score}" \ 
         ON MATCH SET c.download = "${cityData.download}" \ 
@@ -95,13 +116,15 @@ const saveCity = (cityObj) => (
         ON MATCH SET c.free_wifi_available = "${cityData.free_wifi_available}" \ 
         ON MATCH SET c.leisure = "${cityData.leisure}" \ 
         ON MATCH SET c.nomad_score = "${cityData.nomad_score}" \ 
+        ON MATCH SET c.weightedScore = "${weightedScore}" \ 
+        ON MATCH SET c.dailyCost = "${Math.round(cityObj.cost.shortTerm.USD / 30)}" \ 
       RETURN c;`,
     }, (err, newCity) => {
       if (err) {
         console.log(`error adding city: ${err}`);
         reject(err);
       } else {
-      	console.log(`city added ${cityObj.info.city.name}`)
+      	// console.log(`city added ${cityObj.info.city.name}`)
         resolve('next');
       }
     });
