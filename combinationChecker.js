@@ -25,9 +25,7 @@ var activities = ['water_sports',
 'traditional_dance',
 'yoga']
 
-console.log(locationData[0][activities[4]]);
-
-var checkAllCities = function(array) {
+// var checkAllCities = function(array) {
 	
-}
+// }
 

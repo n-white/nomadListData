@@ -22,7 +22,7 @@ const saveCity = (cityObj) => (
       'ease': cityObj.ease
     }
 
-    console.log('!', cityData.name, ': ', cityData.months_to_visit);
+    console.log('Updating:', cityData.name);
 
     // Add all activities to the city
     for (key in cityObj) {
@@ -30,9 +30,6 @@ const saveCity = (cityObj) => (
         cityData.activity.push('"' + key + '"');
       }
     }
-
-
-
 
     // Cypher query to add one city node
     db.cypher({
@@ -76,4 +73,87 @@ const recursiveAdd = (cityArray) => {
   })
 };
 
-recursiveAdd(locationData);
+// This function adds month nodes
+const saveMonth = () => (
+  new Promise((resolve, reject) => {
+    
+    // Cypher query to add all months
+    db.cypher({
+      query: `
+        MERGE (m:Month {name:1}) \
+        MERGE (:Month {name:2}) \
+        MERGE (:Month {name:3}) \
+        MERGE (:Month {name:4}) \
+        MERGE (:Month {name:5}) \
+        MERGE (:Month {name:6}) \
+        MERGE (:Month {name:7}) \
+        MERGE (:Month {name:8}) \
+        MERGE (:Month {name:9}) \
+        MERGE (:Month {name:10}) \
+        MERGE (:Month {name:11}) \
+        MERGE (:Month {name:12});`,
+    }, (err, newCity) => {
+      if (err) {
+        console.log(`error adding months: ${err}`);
+        reject(err);
+      } else {
+        console.log(`months added`)
+        resolve('next');
+      }
+    });
+  })
+);
+
+// This function adds SubActivity nodes
+const saveActivities = () => (
+  new Promise((resolve, reject) => {
+    var cypherQuery = ''
+
+    var subActivities = ['water_sports',
+        'yoga',
+        'tanning_cocktails',
+        'diving_snorkeling',
+        'architecture',
+        'ruins',
+        'art',
+        'museums',
+        'beach_lounge',
+        'bars',
+        'outdoor_festivals',
+        'city_club',
+        'hiking',
+        'rafting',
+        'biking',
+        'creatures',
+        'winery',
+        'spa',
+        'city_stroll',
+        'shopping',
+        'street_art_food',
+        'cooking_class',
+        'traditional_dance',
+        'yoga'];
+
+    subActivities.forEach((item) => {
+      cypherQuery += `MERGE (:SubActivity {name:"${item}"}) `
+    })
+
+    console.log(cypherQuery)
+    
+    // Cypher query to add all months
+    db.cypher({
+      query: `${cypherQuery};`,
+    }, (err, newCity) => {
+      if (err) {
+        console.log(`error adding months: ${err}`);
+        reject(err);
+      } else {
+        console.log(`Activities added`)
+        resolve('next');
+      }
+    });
+  })
+);
+
+saveMonth().then(saveActivities().then(recursiveAdd(locationData)));
+// recursiveAdd(locationData);
