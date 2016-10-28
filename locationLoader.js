@@ -12,7 +12,17 @@ const saveCity = (cityObj) => (
     let cityData = {
       'name': cityObj.destination,
       'activity': [],
+      'ancient_to_modern': cityObj.ancient_to_modern,
+      'months_to_visit': JSON.parse(cityObj.months),
+      'avg_flight_rt_sfo': cityObj.avg_flight_rt_sfo,
+      'avg_flight_ow_sfo': cityObj.avg_flight_ow_sfo,
+      'avg_flight_ow_jfk': cityObj.avg_flight_ow_jfk,
+      'avg_flight_rt_jfk': cityObj.avg_flight_rt_jfk,
+      'budget': cityObj.budget,
+      'ease': cityObj.ease
     }
+
+    console.log('!', cityData.name, ': ', cityData.months_to_visit);
 
     // Add all activities to the city
     for (key in cityObj) {
@@ -21,14 +31,26 @@ const saveCity = (cityObj) => (
       }
     }
 
-    console.log('!', cityData.name)
+
+
 
     // Cypher query to add one city node
     db.cypher({
       query: `MERGE (l:Location {name: "${cityData.name}"}) \
+        ON MATCH SET l.ancient_to_modern = ${cityData.ancient_to_modern} \
+        ON MATCH SET l.avg_flight_rt_sfo = ${cityData.avg_flight_rt_sfo} \
+        ON MATCH SET l.avg_flight_ow_sfo = ${cityData.avg_flight_ow_sfo} \
+        ON MATCH SET l.avg_flight_ow_jfk = ${cityData.avg_flight_ow_jfk} \
+        ON MATCH SET l.avg_flight_rt_jfk = ${cityData.avg_flight_rt_jfk} \
+        ON MATCH SET l.budget = ${cityData.budget} \
+        ON MATCH SET l.ease = ${cityData.ease} \
+        FOREACH( j in [${cityData.months_to_visit}] |
+        MERGE (m {name:j})
+        MERGE (l)-[:MONTHS_TO_VISIT]-(m))
         FOREACH( i in [${cityData.activity}] |
         MERGE (a {name:i})
-        MERGE (l)-[:BELONGS]->(a));`,
+        MERGE (l)-[:BELONGS]-(a))        
+        ;`,
     }, (err, newCity) => {
       if (err) {
         console.log(`error adding city: ${err}`);
@@ -40,7 +62,6 @@ const saveCity = (cityObj) => (
     });
   })
 );
-
 
 const recursiveAdd = (cityArray) => {
 	saveCity(cityArray[0])

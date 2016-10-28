@@ -1,95 +1,96 @@
-destination,city,country,continent,avg_flight_rt_sfo,avg_flight_ow_sfo,avg_flight_ow_jfk,avg_flight_rt_jfk,cost,budget,ease,months,optimal_months,beach,water_sports,yoga,tanning_cocktails,diving_snorkeling,historic,architecture,ruins,art,museums,nightlife,beach_lounge,bars,outdoor_festivals,city_club,outdoors,hiking,rafting,biking,creatures,luxury,winery,spa,city_stroll,shopping,culture,street_art_food,cooking_class,traditional_dance,yoga
-Amsterdam,Amsterdam,Netherlands,Europe,$759,$459,$553,$356,$83,$52,5,"7, 8, 9",,,,,,,x,x,,x,x,x,,x,,x,,,,,,x,,,x,x,x,x,,,
-Ankor Wat,Siem Reap,Cambodia,SE Asia,$638,$638,$651,$651,$31,$12,2.5,"1, 2, 11, 12",,,,,,,x,,x,,,,,x,,,x,x,,,,,,,,,x,x,x,x,
-Antalya,Antalya,Turkey,Middle East,"$1,200","$1,200",$720,$720,$44,$17,3.5,"5, 6, 7, 8, 9, 10",,x,x,,x,x,x,,x,x,x,,,x,,x,x,,x,,,x,,x,x,,x,,x,,x
-Auckland,Auckland,New Zealand,Pacific,"$1,200","$1,000","$1,200",$940,$131,$63,4.5,"1, 2, 3, 4, 5, 12",,,,,,,,,,,,x,,x,,x,x,x,x,x,x,x,x,x,x,,,,,,
-Bagan,Yangon,Myanmar,SE Asia,$668,$476,$725,$725,$42,$42,2.5,"1, 2, 3, 4, 11, 12",,,,,,,x,,x,x,,,,,,,x,,,x,,,,,,,x,x,x,,x
-Bangkok,Bangkok,Thailand,SE Asia,$540,$540,$595,$595,$50,$20,3,"1, 2, 11, 12",,,,,,,x,x,x,x,x,x,,x,,x,,,,,,x,,x,x,x,x,x,x,x,x
-Barcelona,Barcelona,Spain,Europe,$977,$450,$265,$506,$121,$46,4.5,"2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",,Beach (Diving/Relaxing),x,x,x,x,x,,,,,x,,x,x,x,,,,,,x,,,,x,x,,,,
-"Bariloche, Patagonia",Bariloche,Argentina,South America,,,,,,,4,"1, 2, 12",,,,,,,,,,,,,,,,,x,x,,x,x,x,x,,x,x,x,x,,,x
-Berlin,Berlin,Germany,Europe,,,,,,,4.5,"8, 9",,,,,,,x,x,,x,x,x,,x,x,x,,,,,,x,,x,x,x,x,x,,,
-"Blagaj, Bosnia",Sarajevo,Bosnia,Eastern Europe,,,,,,,3,"5, 6, 7, 8, 9",,,,,,,x,x,,x,x,,,,,,,,,,,,,,,,x,,,,
-Bordeaux,Bordeaux,France,Europe,,,,,,,4,"5, 6, 7, 8, 9",,Beach (Diving/Relaxing),,,,,,,,,,,,,,,,,,,,x,,,,,,,,,
-Borobudur,Jakarta,Indonesia,SE Asia,,,,,,,2.5,"5, 6, 7, 8, 9",,,,,,,x,,x,x,,,,,,,x,x,,,,,,,,,x,x,,,
-Buenos Aires,Buenos Aires,Argentina,South America,,,,,,,3,"4, 5, 6, 9, 10, 11, 12",,Beach (Diving/Relaxing),,,x,,x,x,,x,,x,,x,x,x,,,,,,x,,,x,,x,x,,x,x
-Cape Town,Cape Town,South Africa,Africa,,,,,,,2.5,"1, 2, 3, 4, 10, 11, 12",,Beach (Diving/Relaxing),x,x,,x,x,,,x,x,x,,x,,x,x,x,,,,x,x,x,x,x,x,x,x,x ,x
-Cappadocia,Istanbul,Turkey,Middle East,,,,,,,3,"5, 6, 9, 10",,,,,,,x,x,x,x,,,,,,,x,x,,,,,,,,,x,x,x,x,
-Cartagena,Cartagena,Colombia,South America,,,,,,,2.5,"1, 2, 3, 4, 11, 12",,,,,,,,,,,,x,,,,,,,,,,,,,,,,,,,
-Chiang Mai,Chiang Mai,Thailand,Asia,,,,,,,3.5,"1, 2, 3, 10, 11, 12",,,,,,,x,x,x,x,,x,,x,x,x,x,x,x,x,,,,,,,x,x,x,x,x
-Cinque Terre,Milan,Italy,Europe,,,,,,,4,"5, 6, 7, 8, 9",,,,,,,x,,,,,,,x,,,x,,,,,x,,,,,,,,,
-Dead Sea,Amman,Jordan,Middle East,,,,,,,2.5,"3, 4, 5",,Beach (Diving/Relaxing),,,,,x,,,,,,,,,,,,,,,x,,x,,x,x,x,x,x,x
-Dolomites,Venice,Italy,Europe,,,,,,,3.5,"5, 6, 7, 8, 9",,,,,,,,,,,,,,,,,x,,,,,x,,,,,,,,,
-Dubai,Dubai,UAE,Middle East,,,,,,,3.5,"1, 2, 3, 11, 12",,Beach (Diving/Relaxing),x,,,,,,,,,x,x,x,,x,,,,,,x,,x,,x,,,,,
-Dubrovnik,Dubrovnik,Croatia,Eastern Europe,,,,,,,4.5,"5, 6, 7, 8, 9, 10, 11, 12",,Beach (Diving/Relaxing),x,,,,x,x,x,x,x,x,x,x,x,,,,,,,,,,,,,,,,
-"Durmitor, Montenegro",Podgorica,Montenegro,Eastern Europe,,,,,,,3,"3, 4, 5, 6, 7, 8, 9, 10",,,,,,,,,,,,x,,,,,x,x,x,x,,,,,,,x,,,,x
-Easter Island,Easter Island,Chile,South America,,,,,,,3,"3, 4 10, 11",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Edinburgh,Edinburgh,Scotland,Europe,,,,,,,4,"2, 3, 4, 5, 6, 7, 8, 9, 11, 12",,,,,,,x,,,,,,,,,,x,,,,,,,,,,,,,,
-"Luxor, Egypt",Cairo,Egypt,Middle East,,,,,,,3,"3, 4, 10, 11",,,,,,,x,x,x,x,x,,,,,,,,,,,,,,,,x,x,,,
-El Chalten,Patagonia,Argentina,South America,,,,,,,3.5,"1, 2, 12",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Florence,Florence,Italy,Europe,,,,,,,4.5,"5, 6, 7, 8",,,,,,,x,,,,,,,,,,,,,,,,,,,,,,,,
-Galapagos,Quito,Equador,South America,,,,,,,3,"1, 2, 3, 4, 5, 6, 12",,Beach (Diving/Relaxing),,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Hawaii,Honolulu,USA,North America,,,,,,,5,"4, 5, 6, 9, 10, 11, 12",,Beach (Diving/Relaxing),x,x,x,x,,,,,,,,,,,,,,,,,,,,,,,,,
-Hong Kong,Hong Kong,Hong Kong,Asia,,,,,,,3.5,"10, 11, 12",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Ibiza,Ibiza,Spain,Europe,,,,,,,4.5,"5, 6, 7, 8, 9",,Beach (Diving/Relaxing),x,x,,x,,,,,,x,x,x,,x,,,,,,,,,,,,,,,
-Reykavic,Reykavic,Iceland,Europe,,,,,,,4,"6, 7, 8, 9",,,,,,,,,,,,,,,,,x,x,,,x,,,x,x,x,x,,,,x
-Jerusalem,Jerusalem,Israel,Middle East,,,,,,,3.5,"4, 5, 10, 11",,,,,,,x,,,,,,,,,,,,,,,,,x,x,,x,x,x,x,
-Jodhpur,Mumbai,India,Asia,,,,,,,2.5,"4, 5, 6, 7",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Koh Phangan,Koh Phangan,Thailand,SE Asia,,,,,,,3.5,"1, 2, 11, 12",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Koh Phi Phi,Koh Phi Phi,Thailand,SE Asia,,,,,,,3.5,"1, 2, 11, 12",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-"Kotor, Montengro",Dubrovnik,Croatia,Eastern Europe,,,,,,,4,"4, 5, 6, 7, 8, 9",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Krabi,Krabi,Thailand,SE Asia,,,,,,,4,"1, 2, 3, 11, 12",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Kyoto,Kyoto,Japan,Asia,,,,,,,4,"3, 4, 5, 10, 11",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Lake Como,Milan,Italy,Europe,,,,,,,4.5,"4, 5, 6, 7, 8, 9, 10",,Beach (Diving/Relaxing),,,,,,,,,,,,,,,,,,,,x,,,,,,,,,
-Lima,Lima,Peru,South America,,,,,,,3.5,"5, 6, 7, 8, 9, 10",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-London,London,England,Europe,,,,,,,5,"6, 7, 8",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Los Angeles,Los Angeles,USA,North America,,,,,,,5,"3, 4, 5, 9, 10, 11",,Beach (Diving/Relaxing),,,,,,,,,,x,,,,,,,,,,x,,,,,,,,,
-Machu Picchu,Cusco,Peru,South America,,,,,,,3.5,"4, 5, 6, 7, 8, 9, 10",,,,,,,x,,,,,,,,,,,,,,,,,,,,,,,,
-Meteora,Athens,Greece,Europe,,,,,,,3,"5, 6, 7, 8, 9","5, 6",,,,,,x,,,,,,,,,,,,,,,,,,,,,,,,
-Mexico City,Mexico City,Mexico,Central America,,,,,,,3,"1, 2, 3, 4, 12",,,,,,,x,,,,,x,,,,,,,,,,,,,,,x,,,,
-Miami,Florida,USA,North America,,,,,,,5,"3, 4, 5, 6, 10, 11, 12","10, 11, 12",Beach (Diving/Relaxing),,,,,,,,,,x,,,,,,,,,,,,,,,,,,,
-Montreal,Montreal,Canada,North America,,,,,,,5,"5, 6, 7, 8, 9",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Moscow,Moscow,Russia,Northern Europe,,,,,,,3,"5, 6, 7, 8, 9","5, 6, 9",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-"Mostar, Bosnia",Sarajevo,Bosnia,Eastern Europe,,,,,,,3,"4, 5, 6, 7, 8, 9, 10",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Munich,Munich,Germany,Europe,,,,,,,4,"8, 9","7, 8",,,,,,,,,,,x,,,,,,,,,,,,,,,x,,,,
-New Orleans,New Orleans,USA,North America,,,,,,,4.5,"1, 2, 3, 4, 5, 10","1, 2, 10",,,,,,x,,,,,,,,,,,,,,,,,,,,,,,,
-New York City,New York City,USA,North America,,,,,,,4.5,"4, 5, 6, 7, 8, 9, 10, 11, 12","4, 8, 9",,,,,,x,,,,,x,,,,,,,,,,x,,,,,,,,,
-Paris,Paris,France,Europe,,,,,,,4.5,"5, 6, 7, 8, 9 ",,,,,,,x,,,,,,,,,,,,,,,,,,,,,,,,
-Petra,Amman,Jordan,Middle East,,,,,,,4,"3, 4, 5, 9, 10","3, 4",,,,,,x,,,,,,,,,,x,,,,,,,,,,,,,,
-Piran,Piran,Slovenia,Eastern Europe,,,,,,,4,"4, 5, 6, 7, 8, 9, 10",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Pompeii,Naples,Italy,Europe,,,,,,,4,"3, 4, 5, 9, 10, 11","3, 4, 5",,,,,,x,,,,,,,,,,,,,,,,,,,,,,,,
-Prague,Prague,Czech Republic,Europe,,,,,,,4,"7, 8, 9",9,,,,,,x,,,,,x,,,,,,,,,,,,,,,x,,,,
-Reims,Reims,France,Europe,,,,,,,4,"5, 6, 7, 8",,,,,,,x,,,,,,,,,,,,,,,x,,,,,,,,,
-Rio De Jineiro,Rio De Jineiro,Brazil,South America,,,,,,,2.5,"1, 2, 3, 4, 12",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Rome,Rome,Italy,Europe,,,,,,,4.5,"5, 6, 7, 8, 9",,,,,,,x,,,,,x,,,,,,,,,,x,,,,,,,,,
-Saint Petersburg,Saint Petersburg,Russia,Europe,,,,,,,3,"5, 6, 7, 8",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-San Francisco,San Francisco,USA,North America,,,,,,,5,"5, 6, 7, 8, 9, 10","9, 10",,,,,,x,,,,,x,,,,,,,,,,x,,,,,,,,,
-San Sebastian,San Sebastian,Spain,Europe,,,,,,,4,"5, 6, 7, 8",,Beach (Diving/Relaxing),,,,,,,,,,,,,,,,,,,,x,,,,,,,,,
-Santiago,Santiago,Chile,South America,,,,,,,4,"1, 2, 3, 4, 9, 10, 11, 12",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Santorini,Athens,Greece,Europe,,,,,,,4,"4, 5, 10, 11",,Beach (Diving/Relaxing),,,,,,,,,,,,,,,,,,,,x,,,,,x,,,,
-Seoul,Seoul,South Korea,Asia,,,,,,,4.5,"3, 4, 5, 9, 10, 11",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Seville,Madrid,Spain,Europe,,,,,,,4.5,"4, 5, 9, 10, 11","10, 11",,,,,,x,,,,,x,,,,,,,,,,,,,,,x,,,,
-Shanghai,Shanghai,China,Asia,,,,,,,4,"9, 10, 11","10,11",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Sintra,Lisbon,Portugal,Europe,,,,,,,4.5,"5, 6, 7, 8, 9","5, 6, 9",,,,,,x,,,,,,,,,,,,,,,,,,,,x,,,,
-South of France,Nice,France,Europe,,,,,,,4.5,"5, 6, 7, 8","5, 8",Beach (Diving/Relaxing),,,,,,,,,,,,,,,,,,,,x,,,,,,,,,
-Stockholm,Stockholm,Sweden,Europe,,,,,,,4.5,"5, 6, 7, 8","5, 6",,,,,,x,,,,,x,,,,,,,,,,,,,,,x,,,,
-Sydney,Sydney,Australia,Pacific,,,,,,,4.5,"1, 2, 3, 4, 5, 9, 10, 11, 12","3, 4, 5, 9, 10, 11",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Tel Aviv,Tel Aviv,Israel,Middle East,,,,,,,4,"3, 4, 9, 10, 11",,Beach (Diving/Relaxing),,,,,,,,,,x,,,,,,,,,,,,,,,,,,,
-Tokyo,Tokyo,Japan,Asia,,,,,,,4.5,"3, 4, 8, 9, 10","8, 9, 10",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Torres Del Paine,Punta Arenas,Chile,South America,,,,,,,3,"1, 2, 3, 4, 9, 10, 11, 12","4, 9, 10",,,,,,,,,,,,,,,,x,,,,,,,,,,,,,,
-Tulum,Tulum,Mexico,North America,,,,,,,4,"1, 2, 3, 4, 5, 10, 11, 12","4, 5, 6",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Tuscany,Rome,Italy,Europe,,,,,,,4.5,"4, 5, 6, 7, 8, 9, 10","4, 5, 10",,,,,,,,,,,,,,,,,,,,,x,,,,,,,,,
-Ubud,Ubud,Indonesia,SE Asia,,,,,,,3,"4, 5, 6, 7, 8, 9, 10","4, 5, 6, 9",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Vancouver,Vancouver,Canada,North America,,,,,,,5,"3, 4, 5, 6, 7, 8, 9, 10, 11","3, 4, 5, 9, 10, 11",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Venice,Venice,Italy,Europe,,,,,,,4,"4, 5, 6, 7, 8, 9, 10","4, 5, 9, 10",,,,,,x,,,,,,,,,,,,,,,x,,,,,x,,,,
-Wadi Rum,Amman,Jordan,Middle East,,,,,,,3.5,"3, 4, 5, 9, 10","3, 4",,,,,,,,,,,,,,,,x,,,,,,,,,,,,,,
-Washington DC,Washington DC,USA,North America,,,,,,,5,"5, 6, 7, 8, 9","5, 8, 9",,,,,,x,,,,,x,,,,,,,,,,,,,,,,,,,
-Wine Country - Maipui,Mendoza,Argentina,South America,,,,,,,3.5,"1, 2, 3, 4, 10, 11, 12","10, 11, 3, 4",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Yellowstone,Jackson Hole,USA,North America,,,,,,,4,"4, 5, 6, 8, 9, 10, 11","4, 5, 6, 9, 10, 11",,,,,,,,,,,,,,,,x,,,,,,,,,,,,,,
-Agra,New Delhi,India,SE Asia,,,,,,,3.5,"1, 2, 3, 11, 12",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Kathmandu,Kathmandu,Nepal,SE Asia,,,,,,,3,"3, 4, 5, 9, 10, 11",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Sigiriya,Colombo,Sri Lanka,SE Asia,,,,,,,3,"1, 2, 3, 4, 9, 10, 11, 12","1, 3",,,,,,x,,x,,,,,,,,x,x,,,,,,,,,x,x,x,x,x
-Lukla,Kathmandu,Nepal,SE Asia,,,,,,,2.5,"1, 2, 3, 4, 9, 10, 11, 12","11, 12",,,,,,,,,,,,,,,,x,x,x,x,,,,,,,x,,,,
-Olso,Olso,Norway,Northern Europe,,,,,,,4,"5, 6, 7, 8, 9","6, 7, 8",,,,,,x,x,,x,x,x,,x,,x,x,x,,x,,x,,x,x,x,,,,,
-Boracay,Manila,Phillipines,Pacific,,,,,,,3.5,"1, 2, 3, 4, 5, 11, 12",,x,x,,x,x,,,,,,x,x,,,,x,x,,,x,x,,x,,,x,,,,x
-Ngora Ngora Crater,"Nairobi, Kenya",Tanzania,Africa,,,,,,,2.5,"6, 7, 8, 9, 10","6, 7",,,,,,,,,,,,,,,,x,,,,xx,,,,,,x,,,,
-Serengeti,"Nairobi, Kenya",Kenya,Africa,,,,,,,3,"1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12","1, 2, 6, 7, 8, 9",,,,,,,,,,,,,,,,x,x,,x,xx,,,,,,x,x,,x,
+destination,city,country,continent,avg_flight_rt_sfo,avg_flight_ow_sfo,avg_flight_ow_jfk,avg_flight_rt_jfk,cost,budget,ease,months,optimal_months,ancient_to_modern,beach,water_sports,yoga,tanning_cocktails,diving_snorkeling,historic,architecture,ruins,art,museums,nightlife,beach_lounge,bars,outdoor_festivals,city_club,outdoors,hiking,rafting,biking,Animals,luxury,winery,spa,city_stroll,shopping,culture,street_art_food,cooking_class,traditional_dance,yoga,reasons_to_go
+Amsterdam,Amsterdam,Netherlands,Europe,$759,$459,$553,$356,$83,$52,5,"7, 8, 9",,4,,,,,,x,x,,x,x,x,,x,x,x,x,,,x,,x,,,x,x,x,x,,,,"Nightlife, Liberal, Exploration, Water"
+Ankor Wat,Siem Reap,Cambodia,SE Asia,$638,$638,$651,$651,$31,$12,2.5,"1, 2, 11, 12",,2,,,,,,x,,x,,,,,x,,,x,x,,,x,,,,,,x,x,x,x,,"Spiritual, Wonder of the World, Fairytale, Temples, Ruins, Deep Culture, Local Cuisine"
+Antalya,Antalya,Turkey,Middle East,"$1,200","$1,200",$720,$720,$44,$17,3.5,"5, 6, 7, 8, 9, 10",,3.5,x,x,,x,x,x,,x,x,x,,,x,,x,x,,x,,,x,,x,x,,x,,x,,x,"Relaxation, Beautiful, Water Excursions, Underwater Exploration"
+Auckland,Auckland,New Zealand,Pacific,"$1,200","$1,000","$1,200",$940,$131,$63,4.5,"1, 2, 3, 4, 5, 12",,5,,,,,,,,,,,x,,x,,x,x,x,x,x,x,x,x,x,x,,,,,,,"Exploration, Adventure, Garden, Art, Nature"
+Bagan,Yangon,Myanmar,SE Asia,$668,$476,$725,$725,$42,$42,2.5,"1, 2, 3, 4, 11, 12",,1.5,,,,,,x,,x,x,,,,,,,x,,,x,,,,,,,x,x,x,,x,"Spiritual, Fairytale, Temples, Ruins, Deep Culture, Reset, Realign"
+Bangkok,Bangkok,Thailand,SE Asia,$540,$540,$595,$595,$50,$20,3,"1, 2, 11, 12",,3.5,,,,,,x,x,x,x,x,x,,x,,x,,,,,,x,,x,x,x,x,x,x,x,x,"Temples, Ruins, Local Cuisine, Shopping, Nightlife, Highly Populated"
+Barcelona,Barcelona,Spain,Europe,$977,NA,$506,$265,$121,$46,4.5,"2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",,4,x,x,x,x,x,x,x,,x,x,x,,x,x,x,,,,,,x,x,,x,x,x,x,,,x,"Local Cuisine, Architecture, Wine, Highly Populated"
+"Bariloche, Patagonia",Bariloche,Argentina,South America,NA,NA,"$1,017",NA,$19,$8,4,"1, 2, 12",,4,,x,,,,,,,,,,,,,,x,x,x,x,x,x,x,,x,x,x,x,,,x,"Nature, Glaciers, Waterfalls"
+Berlin,Berlin,Germany,Europe,$947,NA,$656,NA,$104,$41,4.5,"8, 9",,4.5,,,,,,x,x,x,x,x,x,,x,x,x,,,,,,x,,x,x,x,x,x,,,,"Nightlife, Music, DJs, Historic Structures, Highly Populated"
+"Blagaj, Bosnia",Sarajevo,Bosnia,Eastern Europe,"$1,330",NA,$825,NA,$50,$20,3,"5, 6, 7, 8, 9",,3,,,,,,x,x,,x,,,,,,,x,x,,,,x,,,x,,x,,,,,"Historic Structures, Fairytale, Waterfalls, Peaceful, Nature"
+Bordeaux,Bordeaux,France,Europe,"$1,126",$440,$627,NA,$101,$44,4,"5, 6, 7, 8, 9",,3.5,,,,,,x,x,,x,x,,,,,,,,,,,x,x,x,x,x,x,,,,,"Wine, Palaces, Cathedrals, Garden, Fairytale"
+Borobudur,Jakarta,Indonesia,SE Asia,$682,$452,$625,NA,NA,NA,2.5,"5, 6, 7, 8, 9",,1.5,,,,,,x,,x,x,,,,,,,x,x,,,,,,,,,x,x,,,,"Ancient Wonder of the World, Sculptures, Ruins, Mountains"
+Buenos Aires,Buenos Aires,Argentina,South America,$991,NA,$910,$607,$29,$10,3,"4, 5, 6, 9, 10, 11, 12",,3,x,,,x,,x,x,,x,,x,,x,x,x,,,,,,x,,,x,,x,x,,x,x,"Deep Culture, Nightlife, Art, Shopping, Museums, Local Cuisine, Highly Populated"
+Cape Town,Cape Town,South Africa,Africa,"$1,087",NA,$909,NA,$97,$59,2.5,"1, 2, 3, 4, 10, 11, 12",,3,x,x,x,,x,x,,,x,x,x,,x,,x,x,x,,x,x,x,x,x,x,x,x,x,x,x ,x,"Ocean, Mountains, Animals, Parks, Nature, Beautiful, Highly Populated"
+Cappadocia,Istanbul,Turkey,Middle East,$804,NA,$606,NA,$53,$21,3,"5, 6, 9, 10",,2,,,,,,x,x,x,x,,,,,,,x,x,,,,,,,,,x,x,x,x,,"Landscape, Nature, Ruins, Rock Formations, Exploration"
+Cartagena,Cartagena,Colombia,South America,$549,NA,$374,NA,$33,$13,2.5,"1, 2, 3, 4, 11, 12",,3,,x,,x,x,x,x,,x,x,x,x,x,,x,,,,,,x,,,x,x,x,x,,,,"Beach, Walled City, Nightlife"
+Chiang Mai,Chiang Mai,Thailand,Asia,$666,NA,$686,NA,$35,$13,3.5,"1, 2, 3, 10, 11, 12",,2.5,,,,,,x,x,x,x,,x,,x,x,x,x,x,x,x,x,,,,,,x,x,x,x,x,"Spiritual, Elephants, Tigers, Temples, Thai Cooking, Nature, Exploration"
+Cinque Terre,Milan,Italy,Europe,$831,$789,$507,$376,$119,$51,4,"5, 6, 7, 8, 9",,3.5,,,,,,x,,,,,,,x,,,x,x,,,,x,x,,,x,,,,,,"Beautiful, Fairytale, Exploration, Relaxation, Peaceful"
+Dead Sea,Amman,Jordan,Middle East,$906,NA,$772,NA,$55,$23,2.5,"3, 4, 5",,2.5,x,,x,,,x,,,,,,,,,,x,x,,,,x,,x,,x,x,,,,,"Immersive Experience, Healing, Relaxation, Spa, Beach, Nature"
+Dolomites,Venice,Italy,Europe,$916,$326,$526,NA,$110,$45,3,"5, 6, 7, 8, 9",,4,,,,,,,,,,,,,,,,x,x,,x,x,x,,,,,,,,,,"Nature, Exploration, Adventure"
+Dubai,Dubai,UAE,Middle East,$827,NA,$636,NA,$282,$111,3.5,"1, 2, 3, 11, 12",,5,x,x,,,,,,,,,x,x,x,,x,,,,,,x,,x,,x,,,,,,"Highly Developed, Conservative, Beach, Highly Populated, Modern, Desert"
+Dubrovnik,Dubrovnik,Croatia,Eastern Europe,"$1,325",NA,$908,NA,$47,$20,4.5,"5, 6, 7, 8, 9, 10, 11, 12",,3.5,x,,,,,x,x,x,x,x,x,,x,x,,x,x,,,,x,x,x,x,x,x,x,,,,"Walled City, Historic, Cobblestone Streets, Nature, Beautiful, Water"
+"Durmitor, Montenegro",Podgorica,Montenegro,Eastern Europe,"$1,329",NA,$813,NA,NA,NA,3,"3, 4, 5, 6, 7, 8, 9, 10",,3,,,,,,,,,,,x,,,,,x,x,x,x,,,,,,,x,,,,x,"Exploration, Adventure, Hiking, Nature, Landscape "
+Easter Island,Easter Island,Chile,South America,NA,NA,"$1,360",NA,$91,$39,3,"3, 4 10, 11",,1.5,x,,,,,x,,x,x,,,,,,,x,x,,,,,,,,,x,x,,,,"Ancient Wonder of the World, Nature, Hiking, Landscape Ruins"
+Edinburgh,Edinburgh,Scotland,Europe,$917,NA,$767,$722,$98,$41,4,"2, 3, 4, 5, 6, 7, 8, 9, 11, 12",,3.5,,,,,,x,,,,,,,,,,x,,,,,,,,,,,,,,,"Castles, Museums, Historic, Highly Developed"
+"Luxor, Egypt",Cairo,Egypt,Middle East,$797,NA,$693,NA,$37,$14,3,"3, 4, 10, 11",,1.5,,,,,,x,x,x,x,x,,,,,,x,x,,,,,,,,,x,x,,,,"Ancient Wonder of the World, Exploration, Art, Landscape"
+El Chalten,Patagonia,Argentina,South America,$298,$188,NA,NA,NA,NA,3.5,"1, 2, 12",,2,,,,,,,,,,,,,,,,x,x,,x,x,,,,,,,,,,,"Landscape, Mountains, Exploration, Natural Wonder of the World"
+Florence,Florence,Italy,Europe,$433,NA,$948,NA,$114,$46,4.5,"5, 6, 7, 8",,3.5,,,,,,x,,x,x,x,,,,,,,,,,,x,,,x,x,x,x,,,,"Historic Structures, Cathedrals, Garden, Art, Parks, Cobblestone Streets, Shopping"
+Galapagos,Quito,Ecuador,South America,$614,$427,$401,$529,$30,$13,3,"1, 2, 3, 4, 5, 6, 12",,3,x,x,,,x,,,,,,,,,,,x,x,,x,xx,,,,,,,,,,,"Underwater Exploration, Adventure, Hiking, Animals, Parks, Beach"
+Hawaii,Honolulu,USA,North America,$407,$248,$698,$401,$171,$67,5,"4, 5, 6, 9, 10, 11, 12",,5,x,x,x,x,x,,,,,,x,x,x,x,x,x,x,x,x,xx,x,,x,x,x,,,x,x,x,"Parks, Beach, Hiking, Exploration, Adventure, Relaxation, Waterfalls"
+Hong Kong,Hong Kong,Hong Kong,Asia,$578,NA,$591,NA,$148,$60,3.5,"10, 11, 12",,5,,,,,,,,,,,x,,x,,x,x,x,,,,x,,x,x,x,x,x,,,,"Highly Developed, Conservative, Fast Paced, Shopping, Highly Populated, Nature, Mountains"
+Ibiza,Ibiza,Spain,Europe,"$1,374",NA,$834,NA,$449,$185,4.5,"5, 6, 7, 8, 9",,4.5,x,x,x,x,x,,,,,,x,x,x,,x,,,,,,x,,x,,x,,,,,,"Beach, Nightlife, Beautiful, Water Excursions, Exploration, Relaxation, Music, DJs"
+Reykjavik,Reykjavik,Iceland,Europe,$571,NA,$628,NA,NA,NA,4,"6, 7, 8, 9",,4,,,,,,x,x,,x,x,,,,,,x,x,,,x,x,,x,x,x,x,,,,x,"Nature, Beautiful, Landscape, Glaciers, Waterfalls, Hiking, Exploration"
+Jerusalem,Jerusalem,Israel,Middle East,NA,NA,NA,NA,$80,$32,3.5,"4, 5, 10, 11",,3,,,,,,x,x,x,x,,,,,,,,,,,,,,x,x,,x,x,x,x,,"Exploration, Spiritual, Cobblestone Streets, Ruins, Walled City, Museums, Art, Historic"
+Jodhpur,Mumbai,India,Asia,$805,"$1,289",$702,$701,$60,$22,2.5,"4, 5, 6, 7",,2.5,,,,,,x,x,x,x,,,,,,,x,x,,,,,,,,,x,x,x,,,"Cobblestone Streets, Exploration, Historic Structures, Temples, Deep Culture "
+Koh Phangan,Koh Phangan,Thailand,SE Asia,NA,NA,NA,NA,$41,$16,3.5,"1, 2, 11, 12",,3.5,x,x,x,x,x,,,,,,x,x,x,x,x,x,x,x,,x,,,,,,,,,,,"Island Life, Nightlife, Music, Beach, Underwater Exploration, DJs, Water Excursions"
+Koh Phi Phi,Koh Phi Phi,Thailand,SE Asia,NA,NA,NA,NA,NA,NA,3.5,"1, 2, 11, 12",,3.5,x,x,x,x,x,,,,,,x,x,x,x,x,x,x,,x,x,,,,,,,,,,,"Island Life, Nightlife, Music, Beach, Underwater Exploration, DJs, Water Excursions"
+"Kotor, Montenegro",Dubrovnik,Croatia,Eastern Europe,"$1,325",NA,$908,NA,$47,$20,4,"4, 5, 6, 7, 8, 9",,3,x,,,,,x,,x,x,x,,,,,,x,x,,,,x,x,x,x,x,x,x,,,,"Walled City, Fairytale, Cobblestone Streets, Historic Structures, Water, Shopping, Mountains, Architecture, Peaceful, Relaxation"
+Krabi,Krabi,Thailand,SE Asia,NA,NA,$822,NA,$42,$17,4,"1, 2, 3, 11, 12",,4,x,x,x,x,x,,,,,,,,,,,x,x,,,x,,,,,,x,x,x,,x,"Ocean, Beach, Rock Formations, Nature, Hiking, Mountains, Relaxation"
+Kyoto,Kyoto,Japan,Asia,NA,NA,NA,NA,$84,$36,4,"3, 4, 5, 10, 11",,3,,,,,,x,x,x,x,x,,,,,,x,x,,,,x,,,x,x,x,x,x,,,"Spiritual, Art, Exploration, Temples, Garden, Peaceful, Historic Structures, Local Cuisine"
+Lake Como,Milan,Italy,Europe,$831,$789,$507,$376,$119,$51,4.5,"4, 5, 6, 7, 8, 9, 10",,2,x,,,,,,,,,,,,,,,x,x,,x,,x,,x,,x,x,,x,,,"Beautiful, Exploration, Cobblestone Streets, Mountains"
+Lima,Lima,Peru,South America,$579,$387,$535,NA,$50,$17,3.5,"5, 6, 7, 8, 9, 10",,3.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"Fast Paced, Ocean, Nightlife, Local Cuisine, Deep Culture, Art, Ruins, Museums"
+London,London,England,Europe,$729,$439,$501,$283,$181,$68,5,"6, 7, 8",,4,,,,,,x,x,,x,x,x,,x,x,x,,,,,,x,,x,x,x,x,x,x,,x,"Highly Developed, Nightlife, Art, Museums, Fast Paced, Parks, Garden, Shopping"
+Los Angeles,Los Angeles,USA,North America,$131,$86,$302,$169,$155,$60,5,"3, 4, 5, 9, 10, 11",,5,x,,x,x,,x,,,,x,x,,x,x,x,x,x,,x,,x,x,x,x,x,x,x,,,x,"Highly Developed, Nightlife, Art, Museums, Fast Paced, Parks, Garden, Shopping, Exploration"
+Sacred Valley,Cusco,Peru,South America,$791,NA,$788,NA,$40,$15,3.5,"4, 5, 6, 7, 8, 9, 10",,1,,,,,,x,,x,,,,,,,,x,x,,,,,,,,,,,,,,"Ancient Wonder of the World, Fairytale, Nature, Mountains, Ruins, Landscape, Exploration, Adventure, Hiking Local Cuisine, Deep Culture, Spiritual, Water"
+Meteora,Athens,Greece,Europe,$941,NA,$740,NA,$77,$31,3,"5, 6, 7, 8, 9","5, 6",1.5,,,,,,x,x,,,,,,,,,x,x,,x,,,,,,,,,,,,"Mountains, Fairytale, Monastery, Spiritual, Hiking, Exploration, Adventure, Beautiful"
+Mexico City,Mexico City,Mexico,Central America,$390,$212,$419,$232,$37,$18,3,"1, 2, 3, 4, 12",,3.5,,,,,,x,x,x,,x,x,,x,x,x,,,,,,x,,x,,x,x,x,,x,,"Exploration, Nightlife, Museums, Cobblestone Streets, Ruins, Parks, Shopping, Highly populated"
+Miami,Florida,USA,North America,NA,NA,NA,NA,$197,$73,5,"3, 4, 5, 6, 10, 11, 12","10, 11, 12",5,x,,,,,,,,,,x,,,,,,,,,,,,,,,,,,,,"Highly Developed, Nightlife, Music, DJs, Ocean, Beach, Water Excursions, Art, Museums, Fast Paced, Parks, Garden, Shopping, Exploration"
+Montreal,Montreal,Canada,North America,$454,$273,$180,NA,$135,$56,5,"5, 6, 7, 8, 9",,5,,,,,,x,x,,x,,x,,x,x,x,x,x,x,x,,x,,x,x,x,x,x,,,,"Highly Developed, Nightlife, Art, Museums, Fast Paced, Parks, Garden, Shopping, Exploration"
+Moscow,Moscow,Russia,Northern Europe,$901,NA,$527,$355,$67,$28,3,"5, 6, 7, 8, 9","5, 6, 9",4,,,,,,x,x,,x,x,x,,x,x,x,,,,,,x,,x,x,x,x,x,,x,,"Highly Developed, Architecture, Cathedral, Nightlife, Art, Museums, Fast Paced, Parks, Garden, Shopping, Exploration, Historic Structures, Palaces, "
+"Mostar, Bosnia",Sarajevo,Bosnia,Eastern Europe,"$1,330",NA,$825,NA,$50,$20,3,"4, 5, 6, 7, 8, 9, 10",,3,,,,,,x,,x,x,x,,,,,,,,,,,x,,,x,,x,x,,,,"Cobblestone Streets, Historic Structures, Water, Exploration, Museums, Parks"
+Munich,Munich,Germany,Europe,"$1,022",$898,$593,NA,$103,$47,4,"8, 9","7, 8",3.5,,,,,,x,x,,x,x,x,,x,x,,,,,,,x,,,x,,x,,,,,"Highly Developed, Nightlife, Art, Museums, Fast Paced, Parks, Garden, Shopping, Exploration"
+New Orleans,New Orleans,USA,North America,$340,NA,$246,NA,$171,$78,4.5,"1, 2, 3, 4, 5, 10","1, 2, 10",4,,,,,,x,,,,,,,,,,,,,,,,,,,,,,,,,"Historic, Local Cuisine, Nightlife, Liberal, Adventure, Exploration"
+New York City,New York City,USA,North America,$298,$188,NA,NA,$227,$84,4.5,"4, 5, 6, 7, 8, 9, 10, 11, 12","4, 8, 9",5,,,,,,x,,,x,x,x,,x,x,x,,,,,,x,,x,,x,x,x,,x,,"Highly Developed, Nightlife, Music, DJs, Art, Museums, Fast Paced, Parks, Garden, Shopping, Exploration, Highly Populated"
+Paris,Paris,France,Europe,$781,$386,$492,$546,$181,$67,4.5,"5, 6, 7, 8, 9 ",,4.5,,,,,,x,x,,x,x,x,,x,,x,,,,,,x,x,x,x,x,x,x,x,,,"Exploration, Museums, Art, Nightlife, Wine, Shopping, Architecture, Cathedrals, Historic, Parks, Garden, Highly Populated, Water"
+Petra,Amman,Jordan,Middle East,$906,NA,$772,NA,$55,$23,4,"3, 4, 5, 9, 10","3, 4",2,x,,,,,x,,x,x,,,,,,,x,x,,,,,,,,,,,,,,"Ancient Wonder of the World, Desert, Fairytale, Rock Formations, Exploration, Art, Ruins"
+Piran,Piran,Slovenia,Eastern Europe,NA,NA,NA,NA,$61,$36,4,"4, 5, 6, 7, 8, 9, 10",,3.5,,,,,,x,x,x,,,,,,,,x,x,,,,x,,,x,x,x,x,,,,"Walled City, Ocean, Ruins, Relaxation, Beautiful, Exploration, Shopping, Architecture, Cobblestone Streets"
+Pompeii,Naples,Italy,Europe,"$1,043",NA,$607,$636,$74,$32,4,"3, 4, 5, 9, 10, 11","3, 4, 5",1,,,,x,,x,,x,,x,,,,,,x,x,,,,,,,,,,,,,,"Ancient City, Ruins, Museum"
+Prague,Prague,Czech Republic,Europe,$997,$490,$603,NA,$77,$31,4,"7, 8, 9",9,3.5,,,,,,x,x,,,x,x,,x,,x,,,,,,x,,x,x,x,x,x,x,x,,"Art, Exploration, Parks, Relaxation, Architecture, Cobblestone Streets, Beautiful, Water"
+Reims,Reims,France,Europe,NA,NA,NA,NA,NA,NA,4,"5, 6, 7, 8",,3,,,,,,x,x,,,x,,,,,,x,x,,,,x,x,,x,x,x,x,x,,,"Art, Wine, Architecture"
+Rio De Janeiro,Rio De Janeiro,Brazil,South America,$778,NA,"$1,036",NA,NA,NA,2.5,"1, 2, 3, 4, 12",,4,x,x,,x,x,,,,,,x,x,x,x,x,,,,,,,,,,,x,x,x,x,,"Highly Developed, Highly Populated, Beach, Modern"
+Rome,Rome,Italy,Europe,$827,$304,$525,$322,$134,$54,4.5,"5, 6, 7, 8, 9",,2.5,,,,,,x,x,x,x,x,x,,x,,,,,,,,x,,x,x,x,x,x,,x,,"Ancient Wonder of the World, Ruins, Cathedrals, Historic Structures, Local Cuisine, Wine, Relaxation, Shopping, Architecture, Exploration"
+Saint Petersburg,Saint Petersburg,Russia,Europe,$956,NA,$586,NA,$66,$27,3,"5, 6, 7, 8",,4,,,,,,x,x,,x,x,x,,x,x,x,,,,,,x,,x,x,x,,,,,,"Exploration, Museums, Art, Historic, Cathedrals, Palaces, Shopping, Sculptures, Garden, Parks"
+San Francisco,San Francisco,USA,North America,NA,NA,$299,$197,$167,$67,5,"5, 6, 7, 8, 9, 10","9, 10",4.5,,,,,,x,,,x,x,x,,x,x,x,x,x,,x,,x,x,x,x,x,x,x,x,,x,"Highly Developed, Liberal, Nightlife, Music, DJs, Ocean, Water Excursions, Art, Museums, Fast Paced, Parks, Garden, Shopping, Exploration"
+San Sebastian,San Sebastian,Spain,Europe,NA,NA,$990,NA,$55,$23,4,"5, 6, 7, 8",,2,x,x,,x,,x,x,,x,,x,x,x,,x,,,,,,x,,,,,,,,,,"Beach, Spa, Cobblestone Streets, Mountains"
+Santiago,Santiago,Chile,South America,$821,$567,$358,$183,$152,$56,4,"1, 2, 3, 4, 9, 10, 11, 12",,4,x,,x,x,x,x,x,,x,x,x,x,,x,,x,x,,,,x,x,x,x,x,x,x,,,,"Highly Developed, Nightlife, Music, DJs, Ocean, Beach, Water Excursions, Art, Museums, Fast Paced, Parks, Garden, Shopping, Exploration"
+Santorini,Athens,Greece,Europe,$941,NA,$740,NA,$77,$31,4,"4, 5, 10, 11",,3,x,x,x,x,x,x,,x,x,,x,x,x,x,x,,,,,,x,x,x,,,x,x,x,x,x,"Beautiful, Ocean, Hiking, Beach, Monastery, Historic, Peaceful, Relaxation, Shopping, Local Cuisine, Exploration, "
+Seoul,Seoul,South Korea,Asia,$630,NA,$680,$596,$101,$38,4.5,"3, 4, 5, 9, 10, 11",,5,,,,,,,,,,,x,,x,x,x,,,,,,,,,,,x,x,,,x,"Highly Developed, Nightlife, Modern, Temples, Shopping, Museums, Highly Populated, Conservative, Garden, Parks, Historic Structures, Local Cuisine"
+Seville,Madrid,Spain,Europe,"$1,006",NA,$491,NA,$110,$43,4.5,"4, 5, 9, 10, 11","10, 11",3,,,,,,x,x,,x,x,x,,x,,,x,x,,x,,x,,x,x,x,x,x,x,x,x,"Relaxation, Exploration, Art, Garden, Parks, Shopping, Historic Structures, Cobblestone Streets, Cathedrals, Palaces"
+Shanghai,Shanghai,China,Asia,$597,NA,$675,NA,$93,$36,4,"9, 10, 11","10,11",5,,,,,,,,,,,x,,x,,x,,,,,,x,,x,x,x,x,x,,x,,"Highly Developed, Highly Populated, Modern, Nightlife, Music, DJs, Art, Museums, Fast Paced, Parks, Garden, Shopping, Exploration"
+Sintra,Lisbon,Portugal,Europe,$931,NA,$646,$399,$95,$39,4.5,"5, 6, 7, 8, 9","5, 6, 9",2,,,,,,x,x,x,,,,,,,,x,x,,,,,,,,,x,x,,,,"Fairytale, Castles, Parks, Garden, Beautiful, Art, Peaceful, Relaxation, Architecture, Nature, Historical Structures, Ruins"
+South of France,Nice,France,Europe,"$1,010",NA,$642,NA,$98,$44,4.5,"5, 6, 7, 8","5, 8",3,x,,x,x,,,,,,,x,x,x,x,x,x,x,,,,x,,x,x,x,,,,,,"Beach, Ocean, Water, Nightlife"
+Stockholm,Stockholm,Sweden,Europe,$726,NA,$509,NA,$157,$67,4.5,"5, 6, 7, 8","5, 6",3.5,,,,,,x,x,,x,,x,,x,x,x,,,,,,,,,,,,,,,,"Water, Cathedrals, Palaces, Highly Populated, Cobblestone Streets"
+Sydney,Sydney,Australia,Pacific,$938,$852,$934,$885,$99,$41,4.5,"1, 2, 3, 4, 5, 9, 10, 11, 12","3, 4, 5, 9, 10, 11",5,x,,,x,x,x,x,,,x,x,x,x,x,x,x,x,,x,,x,x,x,x,,x,x,x,,x,"Highly Populated, Water, Museums, Garden"
+Tel Aviv,Tel Aviv,Israel,Middle East,$920,NA,$688,NA,$105,$49,4,"3, 4, 9, 10, 11",,4,x,x,x,x,,x,x,x,,,x,x,x,x,x,x,x,,x,,x,,x,x,x,x,x,x,x,x,"Highly Developed, Historic, Modern, Beach, Exploration, Relaxation, Museums, Parks, Garden, Architecture, Shopping, Local Cuisine, Spiritual, Art"
+Tokyo,Tokyo,Japan,Asia,$644,NA,$662,NA,$128,$50,4.5,"3, 4, 8, 9, 10","8, 9, 10",5,,,,,,,,,,,x,,x,x,x,,,,,,x,,x,x,x,x,x,,,x,"Highly Developed, Highly Populated, Modern, Nightlife, Music, DJs, Art, Museums, Fast Paced, Parks, Garden, Shopping, Exploration, Local Cuisine, Sculptures, Conservative"
+Torres Del Paine,Punta Arenas,Chile,South America,NA,NA,"$1,057",NA,$64,$28,3,"1, 2, 3, 4, 9, 10, 11, 12","4, 9, 10",2,,,,,,,,,,,,,,,,x,x,x,x,x,,,,,,,,,,,"Mountains, Wildlife, Landscape, Glaciers, Natural Wonder of the World, Adventure"
+Tulum,Tulum,Mexico,North America,NA,NA,NA,NA,$25,$12,4,"1, 2, 3, 4, 5, 10, 11, 12","4, 5, 6",3,x,x,x,x,x,x,,x,,,x,x,x,x,,,,,,,,,,,,x,x,x,,x,"Yoga, Spiritual, Beach, Nature, Exploration, Relaxation"
+Tuscany,Rome,Italy,Europe,$827,$304,$525,$322,$134,$54,4.5,"4, 5, 6, 7, 8, 9, 10","4, 5, 10",3.5,,,,,,x,x,,,,,,,,,,,,,,x,x,x,,x,,,,,,"Wine, Landscape, Garden, Nature"
+Ubud,Ubud,Indonesia,SE Asia,NA,NA,NA,NA,$24,$10,3,"4, 5, 6, 7, 8, 9, 10","4, 5, 6, 9",2,,,,,,,,,,,x,,x,,,x,x,x,,x,x,,x,x,x,x,x,x,x,x,"Temples, Ruins, Animals, Local Cuisine, Shopping, Spiritual, Relaxation, Adventure, Exploration, Parks, Art, Nature, Peaceful, Sculptures, Historic Structures, Landscape, Healing, Hiking"
+Vancouver,Vancouver,Canada,North America,$291,$219,$426,$189,$75,$31,5,"3, 4, 5, 6, 7, 8, 9, 10, 11","3, 4, 5, 9, 10, 11",5,x,,,x,,x,x,,x,x,x,x,x,x,x,x,x,x,x,,x,x,x,x,x,x,x,,,,"Highly Developed, Modern, Nightlife, Music, DJs, Art, Museums, Parks, Garden, Shopping, Exploration, Liberal, Water, Hiking, Adventure, Nature, Landscape"
+Venice,Venice,Italy,Europe,$916,$326,$526,NA,$110,$45,4,"4, 5, 6, 7, 8, 9, 10","4, 5, 9, 10",3.5,,,,,,x,x,,x,x,,,x,,,,,,,,x,,,x,x,x,x,,,,"Canals, Art, Local Cuisine, Relaxation, Crowded, Exploration, Shopping, Cobblestone Streets, Museums, Historic, Conservative, Cathedrals, Beautiful"
+Wadi Rum,Amman,Jordan,Middle East,$906,NA,$772,NA,$55,$23,3.5,"3, 4, 5, 9, 10","3, 4",2,,,,,,,,,,,,,,,,x,x,,,,,,,,,,,,,,"Nature, Landscapes, Desert, Mountains, Beautiful"
+Washington DC,Washington DC,USA,North America,$398,$222,$103,$96,$154,$69,5,"5, 6, 7, 8, 9","5, 8, 9",4,,,,,,x,,,,x,x,,x,,,,,,,,,,,,,,,,,,"Highly Developed, Modern, Nightlife, Music, DJs, Art, Museums, Parks, Garden, Shopping, Exploration"
+Wine Country - Maipu,Mendoza,Argentina,South America,NA,NA,$983,NA,$18,$7,3.5,"1, 2, 3, 4, 10, 11, 12","10, 11, 3, 4",3,,,,,,,,,,,,,,,,,,,,,x,x,,,x,,,,,,"Wine, Nature, Relaxation, Local Cuisine, Beautiful, Exploration, Adventure, Peaceful"
+Yellowstone,Jackson Hole,USA,North America,$540,NA,$532,$457,NA,NA,4,"4, 5, 6, 8, 9, 10, 11","4, 5, 6, 9, 10, 11",2,,,,,,x,,x,,x,,,,,,x,x,,x,,,,,,,,,,,,"Natural Wonder of the world, Hiking, Exploration, Adventure, Historic, Waterfalls, Mountains"
+Taj Mahal - Agra,New Delhi,India,SE Asia,$636,NA,$659,$756,$40,$27,3.5,"1, 2, 3, 11, 12",,2.5,,,,,,x,,,,x,,,,,,,,,,,,,,,,,,,,,"Ancient Wonder of the World, Temples, Historic Structures, Garden, Deep Culture, Local Cuisine, Relaxation, Peaceful, Art"
+Kathmandu,Kathmandu,Nepal,SE Asia,$765,NA,$878,$763,$32,$12,2.5,"3, 4, 5, 9, 10, 11",,2.5,,,,,,,,,,,,,,,,,x,x,,x,,,,,,x,,,,,"Cobblestone Streets, Historic Structures, Exploration, Museums, Parks, Shopping, Architecture, Sculptures, Temples, Spiritual"
+Sigiriya,Colombo,Sri Lanka,SE Asia,$868,NA,$728,NA,$52,$20,3,"1, 2, 3, 4, 9, 10, 11, 12","1, 3",2,,,,,,x,,x,,,,,,,,x,x,,,,,,,,,x,x,x,x,x,"Ancient Wonder of the World, Fairytale, Rock Formations, Art, Exploration, Adventure, Beautiful, Landscape, Spiritual, Ruins, Nature"
+Lukla,Kathmandu,Nepal,SE Asia,$765,NA,$878,$763,$32,$12,2.5,"1, 2, 3, 4, 9, 10, 11, 12","11, 12",2,2,,,,,,,,,,,,,,,x,x,x,x,,,,,,,x,,,,,"Mountains, Landscape, Nature, Town, Adventure, Exploration"
+Oslo,Oslo,Norway,Northern Europe,$905,NA,$509,$370,NA,NA,4,"5, 6, 7, 8, 9","6, 7, 8",5,,,,,,x,x,,x,x,x,,x,,x,x,x,,x,,x,,x,x,x,,,,,,"Highly Developed, Historic, Modern, Beach, Exploration, Relaxation, Museums, Parks, Garden, Architecture, Shopping, Local Cuisine, Spiritual, Art, Sculptures"
+Boracay,Manila,Philippines,Pacific,$533,$919,$555,$484,$90,$41,3.5,"1, 2, 3, 4, 5, 11, 12",,3.5,x,x,,x,x,,,,,,x,x,,,,x,x,,,x,x,,x,,,x,,,,x,"Beach, Ocean, Water Excursions, Underwater Exploration, Peaceful"
+Ngorongoro Crater,"Nairobi, Kenya",Tanzania,Africa,$938,$760,$791,NA,$40,NA,2.5,"6, 7, 8, 9, 10","6, 7",2,,,,,,,,,,,,,,,,x,,,,xx,,,,,,x,,,,,"Safari, Landscape, Animals, Nature"
+Serengeti,"Nairobi, Kenya",Kenya,Africa,$938,$760,$791,NA,$40,$21,3,"1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12","1, 2, 6, 7, 8, 9",2,,,,,,,,,,,,,,,,x,x,,x,xx,,,,,,x,x,,x,,"Safari, Landscape, Animals, Nature"
+Lake Bled,Bled,Slovenia,Eastern Europe,"$1,021",NA,$834,NA,$81,$34,2.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"Nature, Mountains, Historic Structures, Water, Water Excursions, Beautiful, Art, Spiritual, Relaxing, Parks, Garden, Fairytale, Adventure, Exploration"
